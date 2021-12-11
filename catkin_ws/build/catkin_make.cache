@@ -1,0 +1,2 @@
+robo_cani_speech
+-DCATKIN_DEVEL_PREFIX=/home/oem/workspace/ROS/robo_canicross/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/oem/workspace/ROS/robo_canicross/catkin_ws/install -G Unix Makefiles
