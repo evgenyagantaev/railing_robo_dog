@@ -1,8 +1,0 @@
-prefix=/home/oem/workspace/ROS/robo_canicross/catkin_ws/install
-
-Name: robo_cani_speech
-Description: Description of robo_cani_speech
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
