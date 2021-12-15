@@ -262,7 +262,12 @@ static void recognize_from_microphone()
 
     char const *hyp;
 
+    printf("try to open <<<AD DEVICE>>> %s\n", cmd_ln_str_r(config, "-adcdev"));
+    printf("sample rate - %d\n", (int) cmd_ln_float32_r(config, "-samprate"));
+
+    
     if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"), (int) cmd_ln_float32_r(config, "-samprate"))) == NULL)
+    //if ((ad = ad_open_sps(8000)) == NULL)
         E_FATAL("Failed to open audio device\n");
 
     if (ad_start_rec(ad) < 0)
